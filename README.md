@@ -26,7 +26,9 @@
 - **Frontend**: React 18, Vite, TypeScript, Tailwind CSS, Framer Motion
 - **Backend**: Supabase (PostgreSQL, Edge Functions, Auth)
 - **AI Integration**: OpenAI API (GPT-3.5/4) for Insights & Marketing Copy
-- **External API**: KAMIS (한국농수산식품유통공사) 실거래가 오픈 API
+- **External API**: 
+  - KAMIS (한국농수산식품유통공사) 실거래가 오픈 API
+  - OpenWeatherMap (일기예보 및 기상 데이터 API)
 
 ## 🛠 실행 방법
 
