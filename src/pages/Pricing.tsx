@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Calculator, ArrowLeft, TrendingDown, TrendingUp, AlertTriangle } from 'lucide-react';
+import { Calculator, ArrowLeft, AlertTriangle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import { supabase } from '../lib/supabase';
@@ -12,7 +12,6 @@ export default function Pricing() {
   const [sellingPrice, setSellingPrice] = useState<number>(0);
 
   const [marketPrices, setMarketPrices] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // 원가율 = (원가 / 판매가) * 100
@@ -25,7 +24,6 @@ export default function Pricing() {
   useEffect(() => {
     const fetchMarketPrices = async () => {
       try {
-        setLoading(true);
         // 1. 하루 1번 실시간 데이터 갱신 (캐싱 로직)
         let shouldInvoke = true;
         const { data: latestPrice, error: checkErr } = await supabase
@@ -59,8 +57,6 @@ export default function Pricing() {
         setMarketPrices(data || []);
       } catch (error) {
         console.error('Error fetching market prices:', error);
-      } finally {
-        setLoading(false);
       }
     };
     

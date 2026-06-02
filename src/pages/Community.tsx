@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, Heart, Share2, MapPin, Gift, Plus, X, Send, Store, Trash2, Megaphone } from 'lucide-react';
+import { MessageCircle, Heart, Share2, MapPin, Gift, Plus, X, Send, Store, Trash2 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { useAuthStore } from '../store/authStore';
 import { useNavigate } from 'react-router-dom';

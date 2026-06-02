@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
-import { Home as HomeIcon, Users, BarChart3, Settings, User, Sparkles } from 'lucide-react';
+import { Home as HomeIcon, Users, BarChart3, Settings, User } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Home from './pages/Home';
 import Community from './pages/Community';
