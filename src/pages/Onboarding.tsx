@@ -62,7 +62,7 @@ export default function Onboarding() {
             className="bg-white rounded-3xl shadow-xl w-full max-w-sm p-8 text-center"
           >
             <h1 className="text-2xl font-bold text-slate-800 mb-2">환영합니다! 🎉</h1>
-            <p className="text-slate-500 mb-8 text-sm">어떤 목적으로 오픈시그널을 찾아주셨나요?</p>
+            <p className="text-slate-500 mb-8 text-sm">어떤 목적으로 내:일을 찾아주셨나요?</p>
 
             <div className="flex flex-col gap-4">
               <button 

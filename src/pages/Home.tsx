@@ -448,7 +448,7 @@ export default function Home() {
       {/* Header */}
       <header className="mb-6 mt-2">
         <div className="flex items-center justify-between mb-2">
-          <h1 className="text-xl font-bold text-slate-800">오픈시그널</h1>
+          <h1 className="text-xl font-bold text-slate-800">내:일</h1>
           <button 
             onClick={() => setIsWeatherModalOpen(true)}
             className="flex items-center gap-1 bg-white px-3 py-1.5 rounded-full shadow-sm border border-slate-100 text-sm font-medium text-slate-600 hover:bg-slate-50 transition-colors"
@@ -500,7 +500,7 @@ export default function Home() {
             </div>
             <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-64 p-3 bg-slate-800 text-white text-xs rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10">
               <p className="font-semibold mb-1">방문객 예측 기준</p>
-              <p className="text-slate-300">오픈시그널 AI가 사장님의 <span className="text-violet-300">업종, 가게 위치(지역), 그리고 향후 7일간의 날씨 예보</span> 데이터를 종합적으로 분석하여 예상 방문객 수를 논리적으로 추정합니다.</p>
+              <p className="text-slate-300">내:일 AI가 사장님의 <span className="text-violet-300">업종, 가게 위치(지역), 그리고 향후 7일간의 날씨 예보</span> 데이터를 종합적으로 분석하여 예상 방문객 수를 논리적으로 추정합니다.</p>
               <div className="absolute left-1/2 -bottom-1 -translate-x-1/2 border-4 border-transparent border-t-slate-800"></div>
             </div>
           </div>

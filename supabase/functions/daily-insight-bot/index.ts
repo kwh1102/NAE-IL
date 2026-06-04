@@ -40,7 +40,7 @@ export default {
         
       if (ownersError || !owners) throw new Error("사장님 정보를 불러오는데 실패했습니다.");
 
-      let results = [];
+      const results = [];
 
       for (const owner of owners) {
         const region = owner.store_region || '서울';
@@ -90,7 +90,7 @@ export default {
 
         // 앞으로 7일(내일부터 시작) 날짜 배열 생성
         const daysArr = ['일', '월', '화', '수', '목', '금', '토'];
-        let targetDatesList: { date: string, dow: string }[] = [];
+        const targetDatesList: { date: string, dow: string }[] = [];
         for(let i=1; i<=7; i++) {
           const d = new Date();
           // 한국 시간(KST) 보정 (+9시간) 후 날짜 구하기

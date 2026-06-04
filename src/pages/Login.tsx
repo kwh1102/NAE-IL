@@ -29,7 +29,7 @@ export default function Login() {
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
           </svg>
         </div>
-        <h1 className="text-2xl font-bold text-slate-800 mb-2">오픈시그널</h1>
+        <h1 className="text-2xl font-bold text-slate-800 mb-2">내:일</h1>
         <p className="text-slate-500 mb-8 text-sm">사장님과 손님이 만나는 동네 커뮤니티</p>
 
         <button 

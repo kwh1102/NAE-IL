@@ -4,7 +4,7 @@ import { MapPin, Search, Ticket, Flame, ChevronRight } from 'lucide-react';
 const mockStores = [
   {
     id: 1,
-    name: '오픈시그널 카페',
+    name: '내:일 카페',
     image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=600&auto=format&fit=crop',
     discount: '10%',
     desc: '대학 축제 기념 전 메뉴 할인',

@@ -157,7 +157,7 @@ function App() {
     return (
       <div className="flex-1 flex flex-col bg-slate-50 min-h-screen items-center justify-center">
         <div className="w-12 h-12 border-4 border-violet-200 border-t-violet-600 rounded-full animate-spin"></div>
-        <p className="mt-4 text-slate-500 font-medium">오픈시그널 시작하는 중...</p>
+        <p className="mt-4 text-slate-500 font-medium">내:일 시작하는 중...</p>
       </div>
     );
   }
