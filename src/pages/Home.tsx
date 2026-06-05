@@ -458,7 +458,7 @@ export default function Home() {
       <header className="mb-6 mt-2">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2">
-            <img src={logoImg} alt="내:일 로고" className="w-7 h-7 object-contain" />
+            <img src={logoImg} alt="내:일 로고" className="w-7 h-7 object-contain translate-y-[2px]" />
             <div className="relative h-7 w-[60px] flex items-center overflow-visible">
             <AnimatePresence mode="wait">
               <motion.h1
