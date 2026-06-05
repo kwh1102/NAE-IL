@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { supabase } from '../lib/supabase';
+import logoImg from '../assets/naeil.png';
 
 export default function Login() {
   const handleLogin = async () => {
@@ -24,12 +25,10 @@ export default function Login() {
         animate={{ opacity: 1, scale: 1 }}
         className="bg-white rounded-3xl shadow-xl w-full max-w-sm p-8 text-center"
       >
-        <div className="w-20 h-20 bg-violet-100 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-inner">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-violet-600">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-          </svg>
+        <div className="flex flex-col items-center mb-6">
+          <img src={logoImg} alt="내:일 로고" className="w-16 h-16 object-contain mb-3" />
+          <h1 className="text-3xl font-bold text-slate-800 font-logo tracking-wide">내:일</h1>
         </div>
-        <h1 className="text-2xl font-bold text-slate-800 mb-2">내:일</h1>
         <p className="text-slate-500 mb-8 text-sm">사장님과 손님이 만나는 동네 커뮤니티</p>
 
         <button 
