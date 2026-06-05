@@ -128,6 +128,14 @@ export default function Home() {
     setCompletedTomorrowActions(readCompletedTomorrowActions(user.id, tomorrowDate));
   }, [user?.id, tomorrowDate]);
 
+  const [logoState, setLogoState] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLogoState((prev) => (prev + 1) % 2);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 3000);
 
@@ -448,7 +456,20 @@ export default function Home() {
       {/* Header */}
       <header className="mb-6 mt-2">
         <div className="flex items-center justify-between mb-2">
-          <h1 className="text-xl font-bold text-slate-800">내:일</h1>
+          <div className="relative h-7 w-[60px] flex items-center overflow-visible">
+            <AnimatePresence mode="wait">
+              <motion.h1
+                key={logoState}
+                initial={{ opacity: 0, y: 5 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -5 }}
+                transition={{ duration: 0.4 }}
+                className="absolute text-xl font-bold text-slate-800 font-logo"
+              >
+                {logoState === 0 ? '내:일' : 'NAE:IL'}
+              </motion.h1>
+            </AnimatePresence>
+          </div>
           <button 
             onClick={() => setIsWeatherModalOpen(true)}
             className="flex items-center gap-1 bg-white px-3 py-1.5 rounded-full shadow-sm border border-slate-100 text-sm font-medium text-slate-600 hover:bg-slate-50 transition-colors"
